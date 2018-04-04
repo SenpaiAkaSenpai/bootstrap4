@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Formularz bootstrap 2</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+<style>
+
+</style>
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- brak java scriptu -->
+  <noscript>
+    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
+    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
+    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
+  </noscript>
+
+  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
+  <script>
+    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
+    function $buo_f(){
+      var e = document.createElement("script");
+      e.src = "//browser-update.org/update.min.js";
+      document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">1488</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"> Strona główna <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Układy flex</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Hobby
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">To</a>
+          <a class="dropdown-item" href="#">Jest</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Dramat</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Chat</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+  <!-- Treść główna -->
+<div class="container">
+  <h1>Przykład formularza do zakładania konta</h1>
+  <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+  <label for="formGroupExampleInput">Adres email</label>
+  <input type="text" class="form-control" id="email" placeholder="Wprowadź email">
+    <small id="mail" class="form-text text-muted">
+      Nikomu nie udostępniamy maili naszych użytkowników.
+    </small>
+</div>
+<div class="form-group col-md-6">
+  <label for="formGroupExampleInput2">Hasło</label>
+  <input type="text" class="form-control" id="hasło" placeholder="Hasło">
+</div>
+</div>
+<div class="form-group">
+  <label for="formGroupExampleInput2">Powtórz hasło</label>
+  <input type="text" class="form-control" id="hasłoagain" placeholder="Powtórz hasło">
+</div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="formGroupExampleInput2">Podaj imię</label>
+      <input type="text" class="form-control" id="imię" placeholder="Imię">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="formGroupExampleInput2">Podaj nazwisko</label>
+      <input type="text" class="form-control" id="Nazwisko" placeholder="Nazwisko">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="exampleFormControlSelect1">Wybierz grupę</label>
+      <select class="form-control" id="grupa">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>
+    </div>
+    </div>
+    <fieldset class="form-group">
+     <div class=>
+       <legend class=>Wyślij email z potwierdzeniem:</legend>
+       <div class="">
+         <div class="form-check">
+           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+           <label class="form-check-label" for="gridRadios1">
+             Tak
+           </label>
+         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+           <label class="form-check-label" for="gridRadios2">
+             tak
+           </label>
+         </div>
+       </div>
+     </div>
+  <div class="col-sm-10">
+  <button type="submit" class="btn btn-primary">Zapisz</button>
+</div>
+
+</form>
+</div>
+
+  <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
+  <div class="container">
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
